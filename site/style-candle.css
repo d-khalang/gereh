@@ -1,0 +1,57 @@
+ body{
+	background-color: #f3ffbd;
+}
+
+header,#links{
+	background-color: #70c1b3
+}
+
+.container-fluid{
+	padding: 0;
+}
+
+/*nav bar and heading*/
+#iconi{
+	width: 1.7rem;
+}
+
+h2{
+	padding-left: 60px;
+}
+
+#logo-gereh img{
+		width: 100px;
+	}
+#name-gereh {
+	text-shadow: 1px 1px 4px;
+}
+
+/*.candle-page-img{
+		width: 250px;
+	}
+}*/
+
+@media (min-width: 1201px){
+	.candle-page-img{
+		width: 250px;
+	}
+}
+
+
+@media (max-width: 1200px){
+	.candle-page-img{
+		width: 150px;
+	}
+}
+
+@media (max-width: 992px){
+	.candle-page-img{
+		width: 200px;
+	}
+}
+
+@media (max-width: 576px){
+	.candle-page-img{
+		width: 150px;
+	}
+}
