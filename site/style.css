@@ -3,14 +3,19 @@
  #main-nav, body{
 	background-color: #ffcaaf;
 }
-.btn:hover {
-	transform: skew(5deg,10deg);
+.hover1 div img:hover {
+	-webkit-transform:scale(1.1);
 }
+.image-wraper {
+    display: inline-block; /* change the default display type to inline-block */
+    overflow: hidden;      /* hide the overflow */
+}
+
 
 .container-fluid{
 	padding: 0;
 }
-.texti {
+p {
 	font-family: 'Noto Nastaliq Urdu', serif;
 }
 /*candle page whole*/
@@ -30,6 +35,11 @@
 #makroome-header,.makroome-links,#candle-header,.candle-links{
 	background-color: #95f1b3
 }
+
+/*.bord {
+	border: 10px solid transparent;
+	border-image: url(robe.png) 10;
+}*/
 /*nav bar and heading*/
 #iconi{
 	width: 1.7rem;
@@ -49,7 +59,7 @@ h1 {
 
 /*first row*/
 /*hover animation*/
-.hover1 div img {
+/*.hover1 div img {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
@@ -59,7 +69,7 @@ h1 {
 .hover1 div:hover img {
 	-webkit-transform: scale(1.01);
 	transform: scale(1.01);
-}
+}*/
 
 
 /*second row*/
@@ -100,18 +110,31 @@ h1 {
 	background-color: #ff1654;
 }
 
-#second-row-pic-3, #second-row-pic-2, #second-row-pic-1{
-	animation-name: roling;
-	animation-duration: 4s;
-	animation-delay: 3s;
+/*reveal animation*/
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
 }
 
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 
-
+div div a.btn:hover {
+	opacity: .7
+}
+/*#second-row-pic-3, #second-row-pic-2, #second-row-pic-1{
+	animation-name: roling;
+	animation-duration: 4s;
+	animation-delay: 2s;
+}
 @keyframes roling {
 	0% {top: 200px;}
 	100% {top: 0px;}
-}
+}*/
 
 
 /*for index5.html*/
@@ -121,7 +144,6 @@ h1 {
 /*.container{
 	width: 100%;
 }*/
-
 
 
 
